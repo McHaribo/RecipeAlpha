@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class RecipeController extends AbstractController
 {
     /**
-     * @Route("/recipe", name="recipe_list")
+     * @Route("/", name="recipe_list")
      * @param RecetteRepository $recetteRepository
      * @return \Symfony\Component\HttpFoundation\Response
      */
