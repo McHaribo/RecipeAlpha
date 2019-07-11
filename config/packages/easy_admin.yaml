@@ -1,0 +1,17 @@
+easy_admin:
+    entities:
+        # List the entity class name you want to manage
+        Ingredient:
+            class: App\Entity\Ingredient
+        RecetteIngredient:
+            class: App\Entity\RecetteIngredient
+        Recette:
+            class: App\Entity\Recette
+            form:
+                fields:
+                    - name
+                    - description
+                    - duration
+                    - temperature
+                    - cookingDuration
+                    - { property: 'imageFile', type: 'file' }
